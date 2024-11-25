@@ -1,0 +1,68 @@
+html, body {
+    height: 100%; /* Assure que le html et le body occupent toute la hauteur */
+    margin: 0; /* Supprime les marges par défaut */
+}
+.about {
+    min-height: 100vh; /* Assure que la section remplit toute la hauteur de la fenêtre */
+    padding: 4rem 2rem;
+    background: #111; /* Couleur de fond similaire à celle du site */
+    color: #ffffff; /* Couleur du texte */
+    display: flex; /* Utilise flexbox pour centrer le contenu */
+    align-items: center; /* Centre verticalement le contenu */
+    justify-content: center; /* Centre horizontalement le contenu */
+}
+
+.about .container {
+    max-width: 800px;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, #00ffff, #ff00ff);
+    background-clip: text;
+    color: transparent;
+}
+
+.about p {
+    margin-bottom: 1.5rem;
+    color: #888; /* Couleur du texte pour les paragraphes */
+}
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: linear-gradient(45deg, #00ffff, #ff00ff);
+    color: #000;
+    text-decoration: none;
+    border-radius: 2rem;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+}
+
+.about {
+    min-height: 100vh; /* Assure que la section remplit toute la hauteur de la fenêtre */
+    padding: 4rem 2rem;
+    background: #111; /* Couleur de fond similaire à celle du site */
+    color: #ffffff; /* Couleur du texte */
+    position: relative; /* Position relative pour le canvas */
+    overflow: hidden; /* Empêche le débordement */
+}
+
+#aboutCanvas {
+    position: absolute; /* Position absolue pour superposer le canvas */
+    top: 0;
+    left: 0;
+    width: 100%; /* Remplit toute la largeur */
+    height: 100%; /* Remplit toute la hauteur */
+    z-index: 1; /* Met le canvas en arrière-plan */
+}
+
+.container {
+    position: relative; /* Position relative pour le texte */
+    z-index: 2; /* Met le texte au-dessus du canvas */
+}

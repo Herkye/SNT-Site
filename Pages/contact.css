@@ -1,0 +1,87 @@
+html, body {
+    height: 100%; /* Assurez-vous que le html et le body occupent toute la hauteur */
+    margin: 0; /* Supprimez les marges par défaut */
+}
+
+.contact-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #111; /* Fond sombre */
+    color: #ffffff; /* Texte blanc */
+    min-height: 100vh; /* Assurez-vous que la section de contact remplit au moins la hauteur de la fenêtre */
+}
+
+.contact-section h2 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem; /* Taille du titre */
+}
+
+.contact-section p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem; /* Taille du texte */
+}
+
+.contact-section form {
+    max-width: 600px; /* Largeur maximale du formulaire */
+    margin: 0 auto; /* Centrer le formulaire */
+    display: flex;
+    flex-direction: column; /* Disposition en colonne */
+    gap: 1rem; /* Espacement entre les éléments */
+    align-items: center; /* Centrer les éléments horizontalement */
+}
+
+.contact-section .form-group {
+    display: flex; /* Utiliser flexbox pour aligner les éléments */
+    flex-direction: column; /* Disposition en colonne */
+    align-items: center; /* Centrer les éléments horizontalement */
+    width: 100%; /* Prendre toute la largeur disponible */
+}
+
+.contact-section label {
+    margin-bottom: 0.5rem; /* Espacement entre le label et le champ */
+    text-align: center; /* Centrer le texte du label */
+    width: 100%; /* Prendre toute la largeur disponible */
+}
+
+.contact-section input,
+.contact-section textarea {
+    width: 100%; /* Prendre toute la largeur disponible */
+    padding: 1rem; /* Espacement interne */
+    background: rgba(255, 255, 255, 0.1); /* Fond légèrement transparent */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Bordure blanche */
+    color: #ffffff; /* Texte blanc */
+    border-radius: 0.5rem; /* Coins arrondis */
+}
+
+.contact-section button {
+    width: 100%; /* Prendre toute la largeur disponible */
+    padding: 1rem; /* Espacement interne */
+    background: linear-gradient(45deg, #00ffff, #ff00ff); /* Dégradé de couleur */
+    color: #000; /* Texte noir */
+    border: none; /* Pas de bordure */
+    border-radius: 2rem; /* Coins arrondis */
+    font-weight: bold; /* Texte en gras */
+    cursor: pointer; /* Curseur en main */
+    transition: transform 0.3s; /* Transition pour l'effet de survol */
+}
+
+.contact-section button:hover {
+    transform: scale(1.05); /* Agrandir légèrement au survol */
+}
+
+.back-button {
+    display: inline-block; /* Affichage en bloc pour le bouton */
+    padding: 1rem 2rem; /* Espacement interne */
+    background: linear-gradient(45deg, #00ffff, #ff00ff); /* Dégradé de couleur */
+    color: #000; /* Texte noir */
+    text-decoration: none; /* Pas de soulignement */
+    border-radius: 2rem; /* Coins arrondis */
+    font-weight: bold; /* Texte en gras */
+    text-align: center; /* Centrer le texte */
+    transition: transform 0.3s; /* Transition pour l'effet de survol */
+    margin-top: 1rem; /* Espacement au-dessus du bouton */
+}
+
+.back-button:hover {
+    transform: scale(1.05); /* Effet de survol */
+}

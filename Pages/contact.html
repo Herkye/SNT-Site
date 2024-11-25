@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - HoloQuest</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="contact.js" defer></script>
+    <link rel="stylesheet" href="/Pages/contact.css">
+</head>
+<body>
+    <section class="contact-section">
+        <h2>Contactez-nous</h2>
+        <p>Pour toute question, veuillez nous contacter à l'adresse suivante : contact@holoquest.com</p>
+        <form>
+            <div>
+                <label for="name">Nom :</label>
+                <input type="text" id="name" required>
+            </div>
+            <div>
+                <label for="email">Email :</label>
+                <input type="email" id="email" required>
+            </div>
+            <div>
+                <label for="message">Message :</label>
+                <textarea id="message" required></textarea>
+            </div>
+            <button type="submit">Envoyer</button>
+            <a href="/index.html" class="back-button">Retour à l'accueil</a>
+        </form>
+    </section>
+</body>
+</html>
