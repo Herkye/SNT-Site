@@ -121,3 +121,24 @@ window.addEventListener('load', () => {
     animateContentAppearance();
     createParticleBackground();
 });
+
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Récupérer les valeurs du formulaire
+    const name = this.querySelector('input[type="text"]').value;
+    const email = this.querySelector('input[type="email"]').value;
+    const message = this.querySelector('textarea').value;
+
+    // Envoyer l'e-mail
+    emailjs.send("service_dd2p72k", "template_zpnwaie", {
+        from_name: name,
+        from_email: email,
+        message: message
+    })
+    .then(function(response) {
+        alert('Message envoyé avec succès !');
+    }, function(error) {
+        alert('Erreur lors de l\'envoi du message : ' + JSON.stringify(error));
+    });
+});
